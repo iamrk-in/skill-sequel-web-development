@@ -1,0 +1,9 @@
+1. use a DOCTYPE declaration
+2. Structure of HTML with Semantic
+3. Indentation
+4. Id's and Class's (style)
+5. Optimizing Image
+6. Alt for Images
+7. External Styles
+8. Closing Tags <> </>
+9. Validate HTML

@@ -1,0 +1,5 @@
+Module 6:
+1. how internet works, flow of internet, architecture of how internet sends a data to you(client)
+2. web development, how html, css & js - contribute
+
+Module 7: html
