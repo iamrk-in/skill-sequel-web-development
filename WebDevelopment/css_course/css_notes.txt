@@ -1,0 +1,44 @@
+-> What is CSS?
+    - CSS stands for Cascading Style Sheets
+    - Used to Apply the Styles to HTML Content
+
+-> The Important Point:
+    - Property
+    - Syntax:
+        propertyName: itsValue;
+
+-> To apply the Styles to the HTML Content:
+    - there are 3 different ways:
+        1. Inline Styles
+        2. Embedded Styles
+        3. External Styles
+
+-> Comment:
+    - there are 2 different ways:
+        1. Single Line - // .... 
+        2. Multi Line - /* .... */
+
+-> Color:
+    - How many colors do we have??
+        - there are 256 colors
+    - In how many ways, that we can apply the Colors??
+        - there are 3 different ways
+            1. Name: red, green, blue, pink, 
+
+            2. Numeric: 
+                rgb(0, 0, 0)
+                rgb(255, 255, 255)
+                rgb(24, 184, 128)
+
+            3. HexaDecimal:
+                #... (3 chars)
+                #.... (4 chars)
+                #...... (6 chars)
+
+                chars: a - f, A - F, 0 -9
+
+                #6f2; #d2a6; #7a3031;
+
+-> Custom Styling:
+    1. class 
+    2. id 

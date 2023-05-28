@@ -1,0 +1,44 @@
+body {
+  background-color: #f8f9f9;
+}
+
+h1 {
+  font-family: inherit;
+  color: #289;
+}
+
+p {
+  color: rgb(184, 163, 194);
+}
+
+li {
+  border: 1px solid rgb(127, 81, 31);
+}
+
+/* class */
+/* 
+stylemypara
+styleMyPara
+styleMypara
+_styleMyPara
+*/
+.style_my_para {
+  color: goldenrod;
+  background-color: black;
+}
+
+.focus_my_content {
+  padding: 10px;
+  font-size: 24px;
+}
+
+/* id */
+ul#get_style {
+  margin: 10px;
+  border-bottom: 2px solid #a25;
+}
+
+#focus_listItem {
+  text-align: right;
+  font-style: italic;
+}

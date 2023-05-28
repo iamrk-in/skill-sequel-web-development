@@ -1,0 +1,24 @@
+#main {
+  margin: 50px auto;
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.box1 {
+  border: 1px solid #f00;
+}
+
+.box2 {
+  border: 1px solid #0f0;
+}
+
+.box3 {
+  border: 1px solid #00f;
+}
