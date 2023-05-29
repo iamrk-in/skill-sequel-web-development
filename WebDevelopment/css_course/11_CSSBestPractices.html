@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>CSS Best Practices</h4>
+    <ol>
+      <li>Use a CSS Reset or Normalize</li>
+      <li>Organize the CSS with a Modular Approach</li>
+      <li>Optimize CSS Selectors</li>
+      <li>Use CSS Pre-Processors</li>
+      <li>Minify and Concatenate CSS</li>
+      <li>Use Responsive Design</li>
+      <li>Optimize Performance</li>
+      <li>Use Flexbox or Grid for Layouts</li>
+      <li>Comment and Document</li>
+      <li>Regularly Review and Refactor</li>
+    </ol>
+
+    <h4>Use a CSS Reset or Normalize</h4>
+    <p>
+      - CSS Reset: It removes the default browser styling, ensuring consistent
+      across different browsers <br />
+      - Normalize: It preserves useful default styles while normalizing
+      inconsistencies across browsers <br />
+    </p>
+    <p>``` link href='reset.css' rel='stylesheet' ```</p>
+    <p>https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css</p>
+    <p>
+      https://cdnjs.cloudflare.com/ajax/libs/tooltipster/2.3.0/css/reset.css
+    </p>
+
+    <h4>Organize the CSS with a Modular Approach</h4>
+    <p>
+      - Use Modular CSS Methodologies like BEM (Block Element Modifier) or
+      SMACSS (Scalable and Modular Architecture for CSS) <br />
+    </p>
+    <p>
+      ``` /* BEM example*/ .block {} .block__element {}
+      .block__element--modifier {} ``` ``` .menu__menuItem--a ```
+    </p>
+
+    <h4>Optimize CSS Selectors</h4>
+    <p>
+      - Use efficient selectors to improve rendering performance <br />
+      - Avoid excessive chaining and unnecessary complex selectors <br />
+    </p>
+    <p>
+      ``` /* Bad example */ ul > li > a.nav-link {} <br />/* Better example */
+      .nav-link {} ```
+    </p>
+
+    <h4>Use CSS Pre-processors</h4>
+    <p>
+      - Css pre-processors like SASS or LESS offer additional features like
+      variables, nesting, and mixins <br />
+      - They improve th code maintainability and reduce repeatition <br />
+    </p>
+    <p>
+      ``` /* SASS example */ $text-color: #964; p { color: $text-color } ```
+    </p>
+
+    <h4>Minify and Concatenate CSS</h4>
+    <p>
+      - Reduce file size by minifying CSS using tools like CSSNano or UglifyCSS
+      <br />
+      - Concatenate multiple CSS files into a single file to reduce HTTP
+      requests - ``` @import url('path')``` <br />
+    </p>
+
+    <h4>Use Responsive Design</h4>
+    <p>
+      - Create Responsive layouts that adapt to different screen size using
+      media queries <br />
+    </p>
+    <p>
+      - different resolutions: extra small, small, medium, large, extra large
+      <br />
+      320px, 576px, 768px, 992px, 1200px
+    </p>
+    <p>
+      ``` /* Media Queries */ @media screen and (max-width: 768px) { .container
+      { width: 100% } } ```
+    </p>
+
+    <h4>Optimize Performance</h4>
+    <p>
+      - Minimize the use of expensive CSS properties like `box-shadow` and
+      `border-radius` <br />
+      - Avoid unnecessary styling and the use CSS animations and transitions
+      judiciously <br />
+      - Reduce the number of font variations and icon fonts used on a page
+    </p>
+
+    <h4>Use Flexbox or Grid for Layouts</h4>
+    <p>
+      - Leverage CSS Flexbox or Grid for creating flexible and responsive
+      layoutus <br />
+      - They provide the powerful tools for positioning and alignment <br />
+    </p>
+    <p>
+      ``` /* Flex box example */ .container { display: flex; justify-content:
+      center; align-item: center; } ```
+    </p>
+
+    <h4>Comment and Document</h4>
+    <p>
+      - Add comments to your CSS code to explain the complex or non-obvious
+      parts <br />
+      - Document the purpose and usage of CSS classes in style guides or
+      documentation <br />
+    </p>
+
+    <h4>Regularly Review and Refactor</h4>
+    <p>
+      - Regularly review your CSS codebase to identify and remove unused styles
+      <br />
+      - Refactor code to improve readability, maintainability and performance
+    </p>
+  </body>
+</html>

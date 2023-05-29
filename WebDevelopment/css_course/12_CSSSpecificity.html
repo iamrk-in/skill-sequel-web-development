@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>CSS Specificity</h4>
+    <p>
+      <strong>CSS Specificity:</strong> refers to the set of rules that
+      determines which styles are applied when they are conflicting or
+      ovelapping style declaration.
+    </p>
+    <p>
+      It determines which style rule takes precedence over others and how the
+      final rendering of an element is determined
+    </p>
+
+    <p>
+      CSS Specificity is based on the combination of different selectors used in
+      a style rule. Each selector carries a certain weight and the selector with
+      higher specificity. The specificity is calculated based on the following
+      criteria:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Inline Styles:</strong> Styles defined directly on an HTML
+        element using the `style` attribute. They have high specificity
+      </li>
+      <li>
+        <strong>ID's:</strong> Seletors targeting elements by their unique ID
+        attibute using the symbol `#`. They have a higher specificity than
+        classe's and tag's
+      </li>
+      <li>
+        <strong>Classe's, Attributes and PsuedoClasse's:</strong> Selectors
+        targetng elements based on Class Names, Attributes, PsuedoClasses. They
+        have the lowest specificity
+      </li>
+      <li>
+        <strong>Elements and PsuedoElements:</strong> Selectors targeting
+        elements based on their TagName's (eg., div, p) or PsuedoElements (eg.,
+        ::after, ::first-child). They have the lowest specificity
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+-> What is Bootstrap??
+    - Bootstrap is a CSS Framework, 
+    - Used to Create the Responsive Layouts
+
+-> Different Layouts:
+    1. Fixed Layout
+    2. Fluid Layout
