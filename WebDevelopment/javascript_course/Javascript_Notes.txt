@@ -1,0 +1,67 @@
+-> What is Javascript?
+    - Javascript is an open - source client - side scripting language
+    - Used to Create the Web Pages more Interactive
+    - Create, Delete the Selectors, 
+    - Style the Content Dynamically
+    - Load the Content Dynamically
+
+-> How to Start / Work with Javascript
+    1. External 
+    2. Embedded
+    3. Inline
+
+-> How to Display the Data (Value)
+    1. Document: document.write()
+    2. Dialog Box : alert(), confirm(), prompt()
+    3. Console : console.log(), console.warn(), console.error()
+
+-> Comments:
+    1. Single Line : // .............. 
+    2. Multi Line : /* ..... */
+
+-> Data Types:
+    1. Primitive 
+        1. Number : 0 - 9; 65, -23, 85.53, -478.53
+        2. String : a - z, A - Z, 0 - 9, all Symbols - `~!@#$%^&*()_-+={}\|;:'"<>,.?/ - ' ... ' / " .... " / ` ... `
+        3. Boolean : true, false
+
+    2. Non Primitive
+
+-> Identifiers:
+    - The name itself saying that it is used to Identify of a particular task or concept
+    - Define the Identifiers:
+        1. The starting character should be either a - z, A - Z, _ 
+        2. From the second character onwards it can be either a - z, A - Z, 0 - 9, _
+        3. No Spaces are allowed
+        4. No Symbols are allowed, except Underscore 
+        5. Can be a combination of lowercase, uppercase
+
+        eg., num1, _num1, Num1, NUM1, myname, MYNAME, MyName, myName, _myName, my_name
+
+-> Keywords:
+    - A Keyword can also be called as a BuiltIn or PreDefined word, 
+    - Which is having a meaning to do some action
+
+    - list of keywords:
+    try, catch, if, async, var, etc., 
+
+-> Declaration of Variables:
+    - What is a Variable?
+    - a Variable is a name which is used to store the value, access the value, update the value, manipulation of data can be done
+
+    - In How many ways, that we can declare the variables:
+        - There are 3 different ways:
+        1. var 
+        2. let 
+        3. const
+
+-> Operators:
+    - An operator is a symbol, which is used to evaluate the expression
+    - Types of Operators:
+        1. Arithmatic
+            1.1. Binary : +, -, *, /, %, ^  
+            1.2. Unary : ++, -- 
+        2. Assignment : +=, -=, *=, /=, %=
+        3. Comparison (Relational): ==, !=, ===, !==, <, >, <=, >= 
+        4. Conditional (Ternary): () ? : 
+        5. Logical Operators: &&, ||, !

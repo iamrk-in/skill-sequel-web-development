@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+
+        let num1 = 4;
+        let num2 = 7;
+
+        let resValue = 0;
+
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // 1. Arithmatic
+        //     1.1. Binary : +, -, *, /, %, ^
+        resValue = num1 * num2;
+        document.write(
+          `the value of resValue = num1(${num1}) * num2(${num2}): ${resValue} <br />`
+        );
+
+        //     1.2. Unary : ++, --
+        document.write(`the value of num1 before ++: ${num1} <br />`);
+        ++num1;
+        document.write(`the value of num1 after ++: ${num1} <br />`);
+
+        // 2. Assignment : +=, -=, *=, /=, %=
+        // 3. Comparison (Relational): ==, !=, ===, !==, <, >, <=, >=
+        // 4. Conditional (Ternary): () ? :
+        // 5. Logical Operators: &&, ||, !
+      </script>
+    </div>
+  </body>
+</html>
