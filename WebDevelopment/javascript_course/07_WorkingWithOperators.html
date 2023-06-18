@@ -39,9 +39,53 @@
         document.write(`the value of num1 after ++: ${num1} <br />`);
 
         // 2. Assignment : +=, -=, *=, /=, %=
+        document.write(`the value of num1 before +=: ${num1} <br />`);
+        num1 += 15; // num1 = num1 + 15
+        document.write(`the value of num1 after +=: ${num1} <br />`);
+
+        let x = "4";
+        let y = 4.0;
+        let z = 4;
+
+        document.write(
+          `the value of x: ${x} and its datatype: ${typeof x} <br />`
+        );
+
+        document.write(
+          `the value of y: ${y} and its datatype: ${typeof y} <br />`
+        );
+
+        document.write(
+          `the value of z: ${z} and its datatype: ${typeof z} <br />`
+        );
         // 3. Comparison (Relational): ==, !=, ===, !==, <, >, <=, >=
+        res = x == y;
+        document.write(`the value of res = x == y;: ${res} <br />`);
+
+        res = y === x;
+        document.write(`the value of res = y === x; ${res} <br />`);
+
         // 4. Conditional (Ternary): () ? :
+        res =
+          x === y
+            ? "the value and datatype of x and y are equal"
+            : "the value and datatype of x and y are not equal";
+        document.write(
+          `the value of res with conditional statement: ${res} <br />`
+        );
+
         // 5. Logical Operators: &&, ||, !
+        res = y > x && x == z;
+        document.write(`the value of res with &&: ${res} <br />`);
+
+        res = y > x || x == z;
+        document.write(`the value of res with ||: ${res} <br />`);
+
+        res = !(y > x && x == z);
+        document.write(`the value of res with && and !: ${res} <br />`);
+
+        res = !(y > x || x == z);
+        document.write(`the value of res with || and !: ${res} <br />`);
       </script>
     </div>
   </body>

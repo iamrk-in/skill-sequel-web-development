@@ -25,7 +25,10 @@
         2. String : a - z, A - Z, 0 - 9, all Symbols - `~!@#$%^&*()_-+={}\|;:'"<>,.?/ - ' ... ' / " .... " / ` ... `
         3. Boolean : true, false
 
-    2. Non Primitive
+    2. Non Primitive (Abstract)
+        1. Arrays
+        2. Functions
+        3. Objects
 
 -> Identifiers:
     - The name itself saying that it is used to Identify of a particular task or concept
@@ -65,3 +68,27 @@
         3. Comparison (Relational): ==, !=, ===, !==, <, >, <=, >= 
         4. Conditional (Ternary): () ? : 
         5. Logical Operators: &&, ||, !
+
+-> Statements:
+    1. Decision Making Statements: if, if else, if else if else, switch case
+    2. Loop Statements: while, for, do while
+
+-> Arrays:
+    - an Array is used to store multiple values of any data types
+    - indexing - unique digit which starts from 0 to n - 1
+
+-> Functions:
+    - a Function is a reusable set of statements which can be executed under one block when the function is given a call 
+
+    - function call and its definition
+    - reusable function
+    - passing parameters to function
+    - return statement
+    
+    - anonymous function
+    - arrow function
+    - call back function
+
+-> DOM:
+    - DOM stands for Document Object Model
+    

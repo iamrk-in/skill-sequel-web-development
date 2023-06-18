@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        // if, if else, if else if else, switch case
+
+        let a = 0; // in javascript if the variable value is either 0,  , null, false are all considered as false
+        // if
+        if (a) {
+          document.write(`the value of a: ${a} is a valid value <br />`);
+        } else {
+          document.write(`the value of a: ${a} is not a valid value <br />`);
+        }
+
+        a = 66;
+        if (a) {
+          document.write(`the value of a: ${a} is a valid value <br />`);
+        } else {
+          document.write(`the value of a: ${a} is not a valid value <br />`);
+        }
+
+        if (a == 10) {
+          document.write(`the value of a: ${a} is equal to value 10 <br />`);
+        } else {
+          document.write(
+            `the value of a: ${a} is not equal to value 10 <br />`
+          );
+        }
+
+        // nested if else
+        let age = 47;
+
+        if (age > 25) {
+          document.write(`the value of age: ${age} is greater than 25 <br />`);
+          if (age <= 36 && age > 25) {
+            document.write(
+              `the value of age: ${age} is in between the 26 and 36 <br />`
+            );
+          } else if (age <= 48 && age > 36) {
+            document.write(
+              `the value of age: ${age} is in between the 36 and 48 <br />`
+            );
+          } else if (age <= 56 && age > 48) {
+            document.write(
+              `the value of age: ${age} is in between the 48 and 56 <br />`
+            );
+          }
+        } else {
+          document.write(
+            `the value of age: ${age} is either equal to 25 or lesser than 25 <br />`
+          );
+        }
+
+        // switch case
+        let productName = "dell";
+
+        switch (productName) {
+          case "acer":
+            document.write(
+              `the value of productName: ${productName} is matching with case 'acer' <br />`
+            );
+            break;
+
+          case "dell":
+            document.write(
+              `the value of productName: ${productName} is matching with case 'dell' <br />`
+            );
+            break;
+
+          case "aspire":
+            document.write(
+              `the value of productName: ${productName} is matching with case 'aspire' <br />`
+            );
+            break;
+
+          case "lenovo":
+            document.write(
+              `the value of productName: ${productName} is matching with case 'lenovo' <br />`
+            );
+            break;
+
+          default:
+            document.write(
+              `the value of productName: ${productName} is not matching with any of these cases<br />`
+            );
+        }
+      </script>
+    </div>
+  </body>
+</html>

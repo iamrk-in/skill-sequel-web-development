@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      // function definition with arguments
+      function makeFullName(uId, fN, lN) {
+        // local variable declarations
+
+        let flN = fN + " " + lN;
+        return flN;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        // global declarations
+        let userId = 632;
+        let firstName = "john";
+        let lastName = "paul";
+
+        let fullName = "";
+
+        // function call with parameters
+        fullName = makeFullName(userId, firstName, lastName);
+        document.write(`displaying fullName: ${fullName} <br />`);
+
+        userId = 975;
+        firstName = "wilson";
+        lastName = "jain";
+
+        fullName = makeFullName(userId, firstName, lastName);
+        document.write(`displaying fullName: ${fullName}`);
+      </script>
+    </div>
+  </body>
+</html>

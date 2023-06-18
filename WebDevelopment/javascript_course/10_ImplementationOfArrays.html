@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        let numArr1 = [];
+        document.write(`the values of numArr1: ${numArr1} <br />`);
+
+        numArr1 = [23, -65, 8.7, 45, -95];
+        // [ 0,    1,    2,   3,    4]
+        document.write(`the values of numArr1: ${numArr1} <br />`);
+        document.write(`the no of items of numArr1: ${numArr1.length} <br />`);
+        document.write(`the values of numArr1[2]: ${numArr1[2]} <br />`);
+
+        let strArr2 = ["adam", "james", "johny", "paul", "david"];
+        document.write(`the values of strArr2: ${strArr2} <br />`);
+        document.write(`the values of strArr2[3]: ${strArr2[3]} <br />`);
+        document.write(`the no of items of strArr2: ${strArr2.length} <br />`);
+
+        let userData = [245, "john", "john@gmai.com", "+(565) 368 3462", true];
+        document.write(`displaying the userData details: ${userData} <br />`);
+        document.write(
+          `displaying the userData[2] details: ${userData[2]} <br />`
+        );
+        document.write(
+          `the no of items of userData1: ${userData.length} <br />`
+        );
+
+        for (let i = 0; i < userData.length; i++) {
+          document.write(
+            `displaying the userData[${i}] details: ${userData[i]} <br />`
+          );
+        }
+      </script>
+    </div>
+  </body>
+</html>

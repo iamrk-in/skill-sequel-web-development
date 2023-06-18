@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id = mark</p>
+      <p>this is another para with no attributes</p>
+
+      <p class="test">this is a para with class = test</p>
+      <p class="block test">this is a para with classes as block and test</p>
+
+      <p>this is another para with no attributes</p>
+
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li class="tick">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+
+      <script>
+        // javascript code at body place
+
+        // display the 'lang' attribute value of html element
+        document.write(
+          `the html lang attribute value: ${document.documentElement.getAttribute(
+            "lang"
+          )} <br />`
+        );
+
+        // set the background color of the body element
+        document.body.style.backgroundColor = "#def";
+
+        // display the tag name of the head element's first child
+        document.write(
+          `get the tag name of the head element's first child - document.head.firstChild: ${document.head.firstChild} <br />`
+        );
+
+        document.write(
+          `get the tag name of the head element's first child - document.head.firstElementChild : ${document.head.firstElementChild} <br />`
+        );
+
+        document.write(
+          `get the tag name of the head element's first child - document.head.firstElementChild.nodeName: ${document.head.firstElementChild.nodeName} <br />`
+        );
+
+        // selecting the elements by id
+        var match = document.getElementById("mark");
+        document.write(`the selected element by id: ${match} <br />`);
+
+        match.style.backgroundColor = "#000";
+        match.style.color = "#fff";
+
+        // selecting the elements by class name
+        var matches = document.getElementsByClassName("test");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(
+          `the no of elements of same class: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#f00";
+          matches[i].style.color = "#000";
+        }
+
+        // selecting the elements by tag name
+        var matches = document.getElementsByTagName("p");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(
+          `the no of elements of same class: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#0f0";
+          matches[i].style.color = "#dae";
+        }
+
+        // selecting the elements with querySelector()
+        var matches = document.querySelectorAll("li");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(
+          `the no of elements of same class: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.borderBottom = "1px solid #000";
+          matches[i].style.color = "#a45";
+          matches[i].style.listStyleType = "none";
+        }
+      </script>
+    </div>
+  </body>
+</html>

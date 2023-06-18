@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id = mark</p>
+      <p>this is another para with no attributes</p>
+
+      <p class="test">this is a para with class = test</p>
+      <p class="block test">this is a para with classes as block and test</p>
+
+      <p>this is another para with no attributes</p>
+
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li class="tick">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+
+      <script>
+        // javascript code at body place
+
+        // selecting the elements with querySelector()
+        var matches = document.querySelectorAll("li");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(
+          `the no of elements of same class: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.borderBottom = "1px solid #000";
+          matches[i].style.color = "#a45";
+          matches[i].style.listStyleType = "none";
+        }
+      </script>
+    </div>
+  </body>
+</html>

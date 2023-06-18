@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      // function defintion
+      function myFirstFunc() {
+        res = num1 * num2;
+        document.write(`the value of res: ${res} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        // global variables
+        let num1 = 4;
+        let num2 = 5;
+
+        let res = 0;
+
+        // function call
+        myFirstFunc();
+
+        num1 = 3;
+        num2 = 8;
+
+        myFirstFunc();
+
+        num1 = 5;
+        num2 = 4;
+
+        // myFirstFunc();
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style>
+      #intro {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="intro" style="color: red; font-size: 20px">
+        this is a para with id as intro
+      </p>
+      <div id="info" class="disabled">it is a div., with an id as info</div>
+      <script>
+        // javascript code at body place
+        // selecting the elements by id
+        var elem = document.getElementById("intro");
+
+        // applying the styles on elements
+        elem.style.textAlign = "right";
+        elem.style.textDecoration = "line-through";
+
+        // getting the styles from elements
+        document.write(`color: ${elem.style.color} <br />`);
+        document.write(`fontSize: ${elem.style.fontSize} <br />`);
+
+        // getComputedStyle()
+        var styles = window.getComputedStyle(elem);
+        document.write(`color: ${styles.getPropertyValue("color")} <br />`);
+        document.write(
+          `font-size: ${styles.getPropertyValue("font-size")} <br />`
+        );
+
+        // adding the css class's to the elements
+        var elem = document.getElementById("info");
+
+        // className
+        elem.className = "note";
+        elem.className += " highlight";
+
+        // classList
+        // add
+        elem.classList.add("scrum");
+        elem.classList.add("agile");
+
+        // remove
+        elem.classList.remove("highlight");
+
+        // toggle
+        elem.classList.toggle("java");
+        elem.classList.toggle("scrum");
+
+        // contains
+        if (elem.classList.contains("aws")) {
+          document.write(`the class aws is existing!! <br />`);
+        } else {
+          document.write(`the class aws is not existing!! <br />`);
+        }
+      </script>
+    </div>
+  </body>
+</html>
