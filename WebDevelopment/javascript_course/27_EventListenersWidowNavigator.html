@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      function goOnline() {
+        document.write(`you are now Online!!`);
+      }
+
+      function goOffline() {
+        document.write(`you are now Offline!!`);
+      }
+
+      function checkConnectionStatus() {
+        if (navigator.onLine) {
+          document.write(`you are now Online!!`);
+        } else {
+          document.write(`you are now Offline!!`);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        // window.addEventListener("online", goOnline);
+        // window.addEventListener("offline", goOffline);
+        checkConnectionStatus();
+      </script>
+    </div>
+  </body>
+</html>

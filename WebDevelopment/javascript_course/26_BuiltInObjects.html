@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        // window
+        document.write(`widow innerWidth: ${window.innerWidth} <br />`);
+        document.write(`widow innerHeight: ${window.innerHeight} <br />`);
+
+        document.write(
+          `window clientWidth: ${document.documentElement.clientWidth} <br />`
+        );
+        document.write(
+          `window clientHeight: ${document.documentElement.clientHeight} <br />`
+        );
+
+        // screen
+        document.write(`screen Width: ${screen.width} <br />`);
+        document.write(`screen Height: ${screen.height} <br />`);
+
+        document.write(`screen availWidth: ${screen.availWidth} <br />`);
+        document.write(`screen availHeight: ${screen.availHeight} <br />`);
+
+        // location
+        document.write(`href: ${window.location.href} <br />`);
+        document.write(`protocol: ${window.location.protocol} <br />`);
+        document.write(`host: ${window.location.host} <br />`);
+        document.write(`hostname: ${window.location.hostname} <br />`);
+        document.write(`port: ${window.location.port} <br />`);
+
+        // location - loading documents or pages
+        // window.location.assign("http://www.google.com");
+        // window.location.replace("http://www.google.com");
+        // window.location.reload(true);
+
+        // history
+        // window.history.back()
+        // window.history.forward()
+        // window.history.go(-2)
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      sayHello();
+
+      function sayHello() {
+        alert(`hello, i am hoisted!!`);
+      }
+
+      alert(`str1: ${str1}`);
+
+      var str1;
+      str1 = "this is a string!";
+
+      var i = 1;
+      alert(`i: ${i}`);
+
+      var j = 2;
+      var x = 5;
+      var y;
+
+      alert(`x: ${x} , and y: ${y}`);
+      y = 10;
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+      </script>
+    </div>
+  </body>
+</html>

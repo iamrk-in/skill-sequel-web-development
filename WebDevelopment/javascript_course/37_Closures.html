@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+
+      // global variable
+      var counter = 0;
+
+      //   function makeCounter() {
+      //     return (counter += 1);
+      //   }
+
+      //   makeCounter();
+      //   console.log(makeCounter());
+
+      //   counter = 10;
+      //   console.log(makeCounter());
+
+      //   function makeCounter() {
+      //     // local variable
+      //     var counter = 0;
+      //     return (counter += 1);
+      //   }
+      //   console.log(makeCounter());
+      //   console.log(makeCounter());
+
+      function makeCounter() {
+        var counter = 0;
+
+        function make() {
+          counter += 1;
+          return counter;
+        }
+        return make;
+      }
+
+      var myCounter = makeCounter();
+
+      console.log(myCounter());
+      console.log(myCounter());
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+      </script>
+    </div>
+  </body>
+</html>

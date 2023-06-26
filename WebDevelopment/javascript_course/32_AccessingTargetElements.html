@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style>
+      div,
+      p,
+      a {
+        padding: 15px 30px;
+        display: block;
+        border: 1px solid #000;
+        background: #fff;
+      }
+    </style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      DIV
+      <p class="hint">
+        P
+        <a href="#"> A </a>
+      </p>
+    </div>
+    <script>
+      var div = document.getElementById("wrap");
+      div.onclick = function (event) {
+        setTimeout(() => {
+          alert(`target: ${event.target.tagName}, this: ${this.tagName}`);
+        }, 0);
+      };
+    </script>
+  </body>
+</html>

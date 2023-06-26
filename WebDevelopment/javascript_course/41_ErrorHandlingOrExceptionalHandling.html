@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      //   try {
+      //     var greet = "say Hello";
+      //     document.write(`greet: ${greet}`);
+      //     document.write(`greet: ${welcome}`);
+      //   } catch (error) {
+      //     document.write(`error: ${error}`);
+      //   }
+
+      var num = prompt("enter any number: 0 to 100");
+      var start = Date.now();
+
+      try {
+        if (num > 0 && num <= 100) {
+          console.log(`pow() : ${Math.pow(num, num)}`);
+        } else {
+          throw new Error("it's an invalid number!!");
+        }
+      } catch (err) {
+        console.log(`err: ${err}`);
+      } finally {
+        console.log(`the execution took: ${Date.now() - start} ms`);
+      }
+
+      // throwing errors
+      throw 1234;
+      throw "invalid value";
+      throw true;
+
+      throw {
+        name: "invalid parameter",
+        message: "parameter is not a valid",
+      };
+
+      // range error
+      var num = 42.52;
+      num.toFixed(200);
+
+      // reference error
+      var firstName = "john";
+      console.log(`lastName: ${lastName}`);
+
+      // syntax error
+      var arr1 = ["bh", "er", "jm"];
+      console.log(`slice(): ${arr1.slice(1)}`);
+
+      // type error
+      num = 747;
+      num.toLowerCase();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="main">
+        <h1 id="title">
+          <span>This is a <strong>Heading</strong></span>
+        </h1>
+        <p id="hint">This is a <span>Para</span> with an Id Hint</p>
+        <p id="hint2">This is a <span>Para</span> with an Id Hint2</p>
+      </div>
+      <script>
+        // javascript code at body place
+        // accessing the nodes
+        var main = document.getElementById("main");
+        document.write(
+          `main firstChild nodeName: ${main.firstChild.nodeName} <br />`
+        );
+
+        var hint = document.getElementById("hint");
+        document.write(
+          `hint firstChild nodeName: ${hint.firstChild.nodeName} <br />`
+        );
+
+        var hint2 = document.getElementById("hint2");
+        document.write(
+          `hint2 firstChild nodeName: ${hint2.firstChild.nodeName} <br />`
+        );
+
+        // applying styles to nodes
+        main.firstElementChild.style.color = "red";
+        hint.firstElementChild.style.color = "blue";
+
+        // extracting the childNames
+        if (main.hasChildNodes()) {
+          var nodes = main.childNodes;
+          len = nodes.length;
+
+          document.write(`the no. of nodeNames: ${len} <br />`);
+
+          for (let i = 0; i < nodes.length; i++) {
+            document.write(`nodes[${i}]: ${nodes[i].nodeName} <br />`);
+          }
+        }
+
+        // accessing the parent nodes
+        var hint = document.getElementById("hint");
+        document.write(`parentNode: ${hint.parentNode.nodeName} <br />`);
+
+        document.write(
+          `parentNode: ${document.documentElement.parentNode.nodeName} <br />`
+        );
+
+        hint.parentNode.style.backgroundColor = "black";
+
+        // accessing the sibling nodes
+        var title = document.getElementById("title");
+        document.write(
+          `title previousSibling: ${title.previousSibling.nodeName} <br />`
+        );
+
+        var hint = document.getElementById("hint");
+        document.write(
+          `hint previousSibling: ${hint.previousSibling.nodeName} <br />`
+        );
+        document.write(
+          `hint previousElementSibling: ${hint.previousElementSibling.nodeName} <br />`
+        );
+
+        var hint2 = document.getElementById("hint2");
+        document.write(
+          `hint2 previousSibling: ${hint2.previousSibling.nodeName} <br />`
+        );
+        document.write(
+          `hint2 previousElementSibling: ${hint2.previousElementSibling.nodeName} <br />`
+        );
+      </script>
+    </div>
+  </body>
+</html>

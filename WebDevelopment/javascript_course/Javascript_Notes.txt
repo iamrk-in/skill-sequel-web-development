@@ -91,4 +91,34 @@
 
 -> DOM:
     - DOM stands for Document Object Model
-    
+    - DOM Selectors
+    - Css Selectors
+    - Styling DOM Elements
+    - DOM Get and Set Attributes
+    - DOM Manipulation
+    - Get and Set Html Contents
+    - Replace Html Contents
+    - DOM Navigation
+
+-> Objects:
+    - an Object can have an access to properties and methods
+    - window, location, screen, history, date and time, math 
+
+-> Event Listeners
+-> Timers:
+    setTimeout
+    setInterval
+
+-> EventPropagation
+-> BubblingPhase
+-> AccessingTargetElement
+
+-> PreventDefault
+-> BorrowingMethods
+-> Hoisting
+-> Closures
+-> Getter and Setter Functions
+-> Strict Mode
+
+-> JSON:
+    - JSON: Javascript Object Notation

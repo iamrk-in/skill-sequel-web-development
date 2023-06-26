@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      var getValue, setValue;
+
+      (function () {
+        var secret = 0;
+
+        // getter function
+        getValue = function () {
+          return secret;
+        };
+
+        setValue = function (x) {
+          if (typeof x === "number") {
+            secret = x;
+          }
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // javascript code at body place
+        console.log(getValue());
+        setValue(10);
+        console.log(getValue());
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+      function execFunc() {
+        document.write(
+          `the execFunc is execution based on user clicked on button!! <br />`
+        );
+      }
+
+      function firstFunc() {
+        document.write(
+          `the firstFunc is execution based on user clicked on button!! <br />`
+        );
+      }
+
+      function setHoverFunc() {
+        document.getElementById("myBtn2").style.color = "red";
+      }
+
+      function removeHoverFunc() {
+        document.getElementById("myBtn2").style.color = "black";
+      }
+
+      function sayHello() {
+        document.getElementById(
+          "getResponse"
+        ).innerHTML = `load the content in the result!!`;
+      }
+
+      function hoverEffect() {
+        document.getElementById("getResponse").style.backgroundColor = "black";
+        document.getElementById("getResponse").style.color = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" onclick="execFunc()">click to see result</button>
+      <button type="button" id="myBtn2">Button2</button>
+      <button type="button" id="myBtn3">Button3</button>
+
+      <div id="getResponse"></div>
+      <script>
+        // javascript code at body place
+        var btn2 = document.getElementById("myBtn2");
+        btn2.onclick = firstFunc;
+        btn2.onmouseover = setHoverFunc;
+        btn2.onmouseout = removeHoverFunc;
+
+        var btn3 = document.getElementById("myBtn3");
+        btn3.addEventListener("click", sayHello);
+        btn3.addEventListener("mouseover", hoverEffect);
+
+        btn3.removeEventListener("click", sayHello);
+      </script>
+    </div>
+  </body>
+</html>

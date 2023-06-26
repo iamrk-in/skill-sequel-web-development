@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyle.css" />
+    <style>
+      div,
+      p,
+      a {
+        padding: 15px 30px;
+        display: block;
+        border: 1px solid #000;
+        background: #fff;
+      }
+    </style>
+    <!-- scripting -->
+    <script src="customScript.js"></script>
+    <script>
+      // javascript code at head place
+    </script>
+  </head>
+  <body>
+    <div onclick="alert(`bubbling: ${this.tagName}`)">
+      DIV
+      <p onclick="alert(`bubbling: ${this.tagName}`)">
+        P
+        <a href="#" onclick="alert(`bubbling: ${this.tagName}`)"> A </a>
+      </p>
+    </div>
+  </body>
+</html>
